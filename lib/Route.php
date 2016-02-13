@@ -2,7 +2,7 @@
 
 class Route
 {
-	private $_uri = [];
+    private $_uri = [];
 	private $_class = [];
 
 	public function add($url)
