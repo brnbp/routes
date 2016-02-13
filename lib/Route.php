@@ -54,7 +54,7 @@ class Route
 				}
 
 				if (method_exists($new_class, $method) == false) {
-					die('<br>metodo nao existe<br>');
+					return header('HTTP/1.1 404 Resource Not Found');
 				}
 				
 				$new_class->$method();				
