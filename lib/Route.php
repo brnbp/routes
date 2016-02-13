@@ -43,7 +43,7 @@ class Route
 			if (preg_match("#^$value$#", $class)) {
 				
 				if (class_exists($this->_class[$key]) == false) {
-					die('<br>classe nao existe<br>');
+					return header('HTTP/1.1 404 Resource Not Found');
 				}
 
 				$new_class = new $this->_class[$key];	
