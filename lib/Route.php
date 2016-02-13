@@ -3,12 +3,12 @@
 class Route
 {
     private $_uri = [];
-	private $_class = [];
+    private $_class = [];
 
-	public function add($url)
-	{
-		$this->addClass($url);
-		$this->addUrl($url);
+    public function add($url)
+    {
+        $this->addClass($url);
+        $this->addUrl($url);
 	}
 
 	private function addClass(array $url)
